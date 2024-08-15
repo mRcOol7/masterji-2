@@ -89,5 +89,5 @@ To set up the project locally, follow these steps:
 
 ## Live Demo
 
-You can view the live demo of the project at [your-hosted-website.com]([http://your-hosted-website.com](https://masterji-reactapp.vercel.app/)).
+You can view the live demo of the project at [(https://masterji-reactapp.vercel.app/)]([http://your-hosted-website.com](https://masterji-reactapp.vercel.app/)).
 
