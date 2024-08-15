@@ -11,13 +11,15 @@ The project demonstrates modern web development practices with interactive UI el
 
 ## Screenshots
 ### Random User Profile
-![Random User Profile](./screenshots/random-user-profile.png)
+![Random User Profile]![random-user-profile](https://github.com/user-attachments/assets/d9c56000-7f3e-485b-8062-c659d01a8578)
 
 ### Random Jokes Tweet
-![Random Jokes Tweet](./screenshots/random-jokes-tweet.png)
+![Random Jokes Tweet]![random-jokes-tweet](https://github.com/user-attachments/assets/65e6b542-a97e-4196-8d62-ff6735498173)
+
 
 ### Cats Listing
-![Cats Listing](./screenshots/cats-listing.png)
+![Cats Listing]![cats-listing](https://github.com/user-attachments/assets/8ad619da-8cfa-4ff5-af0e-fb2439f68730)
+
 
 ## Features
 - **Random User Profile**: 
@@ -87,18 +89,5 @@ To set up the project locally, follow these steps:
 
 ## Live Demo
 
-You can view the live demo of the project at [your-hosted-website.com](http://your-hosted-website.com).
+You can view the live demo of the project at [your-hosted-website.com]([http://your-hosted-website.com](https://masterji-reactapp.vercel.app/)).
 
-## Submission Instructions
-
-1. Ensure all tasks are completed as specified.
-2. Push the code to your public GitHub repository.
-3. Include this `README.md` file with detailed descriptions, screenshots, and links.
-
-## License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
----
-
-For any issues or questions, please open an issue on the [GitHub repository](https://github.com/yourusername/your-repository/issues).
