@@ -1,0 +1,349 @@
+/* Full screen background with white color and repeating Twitter logos */
+.background {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  background-color: white; /* White background color */
+  background-image: url('../assets/twitter-logo.png'); /* Path to the Twitter logo */
+  background-size: 150px 150px; /* Size of each Twitter logo */
+  background-position: center; /* Center the background image */
+  background-repeat: repeat; /* Repeat the background image */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+/* Container for the tweet card */
+.tweet-container {
+  position: relative;
+  width: 100%;
+  max-width: 700px; /* Adjusted for better view */
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Styles for the tweet card */
+.tweet-card {
+  background: black;
+  color: white;
+  border-radius: 15px;
+  padding: 20px;
+  width: 100%;
+  max-width: 100%;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+  text-align: center;
+  position: relative; /* Ensure the tweet card is above the background */
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.tweet-card:hover {
+  transform: scale(1.02);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.6);
+}
+
+/* Header section of the tweet card */
+.tweet-header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+  position: relative; /* Ensure header is above the background */
+  z-index: 2;
+}
+
+/* Avatar image style */
+.tweet-avatar {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-right: 10px;
+}
+
+/* Styles for the author section */
+.tweet-author {
+  flex: 1;
+  text-align: left;
+  margin-right: 20px;
+}
+
+/* Author's name and handle */
+.author-name {
+  font-size: 1.2em;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+}
+
+.verification-badge {
+  width: 20px;
+  height: 20px;
+  margin-left: 5px;
+}
+
+.author-handle {
+  color: #657786;
+  font-size: 0.9em;
+}
+
+/* Timestamp style */
+.tweet-timestamp {
+  color: #8899a6;
+  font-size: 0.8em;
+  margin-top: 5px;
+}
+
+/* Analytics number style next to timestamp */
+.analytics-number {
+  color: #8899a6;
+  font-size: 0.8em;
+  display: inline-block;
+  margin-left: 15px;
+}
+
+/* Tweet content styling */
+.tweet-content {
+  margin: 20px 0;
+  font-size: 1em;
+}
+
+/* Footer section of the tweet card */
+.tweet-footer {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+/* Analytics section styles */
+.tweet-analytics {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  max-width: 600px; /* Adjust width for better view */
+  border-top: 1px solid #333;
+  padding-top: 10px;
+  color: #8899a6;
+  font-size: 0.9em;
+}
+
+/* Analytics items */
+.analytics-item {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.analytics-icon {
+  width: 20px;
+  height: 20px;
+}
+
+.analytics-number {
+  font-weight: bold;
+}
+
+/* Loading state card */
+.loading-card {
+  background: #333;
+  border-radius: 15px;
+  padding: 20px;
+  width: 100%;
+  max-width: 100%;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+  text-align: center;
+  color: #fff;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Styles for loading elements */
+.loading-avatar {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background: #444;
+  margin: 0 auto 10px;
+  animation: pulse 1.5s infinite ease-in-out;
+}
+
+.loading-content {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.loading-line {
+  height: 12px;
+  background: #444;
+  border-radius: 6px;
+  animation: pulse 1.5s infinite ease-in-out;
+}
+
+.loading-line.short {
+  width: 60%;
+  margin: 0 auto;
+}
+
+.loading-line {
+  width: 80%;
+  margin: 0 auto;
+}
+
+/* Responsive Styles */
+@media (max-width: 1024px) {
+  .tweet-card {
+    padding: 15px;
+  }
+
+  .tweet-header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .tweet-avatar {
+    margin-bottom: 10px;
+  }
+
+  .tweet-author {
+    margin-right: 0;
+  }
+
+  .author-name {
+    font-size: 1.1em;
+  }
+
+  .author-handle {
+    font-size: 0.8em;
+  }
+
+  .tweet-content {
+    font-size: 0.9em;
+  }
+
+  .tweet-analytics {
+    flex-direction: column;
+    align-items: center;
+    width: auto;
+    padding-top: 15px;
+  }
+
+  .analytics-item {
+    margin-bottom: 10px;
+  }
+
+  .analytics-icon {
+    width: 18px;
+    height: 18px;
+  }
+}
+
+@media (max-width: 768px) {
+  .tweet-card {
+    padding: 10px;
+  }
+
+  .tweet-header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .tweet-avatar {
+    width: 40px;
+    height: 40px;
+    margin-bottom: 8px;
+  }
+
+  .tweet-author {
+    margin-right: 0;
+  }
+
+  .author-name {
+    font-size: 1em;
+  }
+
+  .author-handle {
+    font-size: 0.7em;
+  }
+
+  .tweet-content {
+    font-size: 0.85em;
+  }
+
+  .tweet-analytics {
+    flex-direction: column;
+    align-items: center;
+    width: auto;
+    padding-top: 10px;
+  }
+
+  .analytics-item {
+    margin-bottom: 8px;
+  }
+
+  .analytics-icon {
+    width: 16px;
+    height: 16px;
+  }
+}
+
+@media (max-width: 480px) {
+  .tweet-card {
+    padding: 8px;
+  }
+
+  .tweet-header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .tweet-avatar {
+    width: 35px;
+    height: 35px;
+    margin-bottom: 6px;
+  }
+
+  .author-name {
+    font-size: 0.9em;
+  }
+
+  .author-handle {
+    font-size: 0.6em;
+  }
+
+  .tweet-content {
+    font-size: 0.8em;
+  }
+
+  .tweet-analytics {
+    flex-direction: column;
+    align-items: center;
+    width: auto;
+    padding-top: 5px;
+  }
+
+  .analytics-item {
+    margin-bottom: 6px;
+  }
+
+  .analytics-icon {
+    width: 14px;
+    height: 14px;
+  }
+}
+
+@keyframes pulse {
+  0% {
+    background-color: #444;
+  }
+  50% {
+    background-color: #555;
+  }
+  100% {
+    background-color: #444;
+  }
+}
