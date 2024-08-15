@@ -1,70 +1,104 @@
-# Getting Started with Create React App
+# Project Title: React App - Random User Profile, Random Jokes Tweet, and Cats Listing
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Description
+This React project features three main components:
 
-## Available Scripts
+1. **Random User Profile**: Displays random user profiles with the option to refresh for new data.
+2. **Random Jokes Tweet**: Shows tweet-like cards with random jokes and analytics.
+3. **Cats Listing**: Provides a paginated list of cat information with horizontal scrolling cards.
 
-In the project directory, you can run:
+The project demonstrates modern web development practices with interactive UI elements and smooth animations.
 
-### `npm start`
+## Screenshots
+### Random User Profile
+![Random User Profile](./screenshots/random-user-profile.png)
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+### Random Jokes Tweet
+![Random Jokes Tweet](./screenshots/random-jokes-tweet.png)
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+### Cats Listing
+![Cats Listing](./screenshots/cats-listing.png)
 
-### `npm test`
+## Features
+- **Random User Profile**: 
+  - Matches styling according to the Figma design.
+  - Refresh button to fetch a new random user profile.
+  - Creative loading state for the profile card.
+  - API response fields mapped to match Figma design.
+  - Hyperlinks for location and call actions open in a new tab.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- **Random Jokes Tweet**:
+  - Static author details (e.g., Elon Musk).
+  - Randomly generated timestamp, views, date, and other analytics.
+  - Creative loading state for the tweet card.
+  - New joke data replaces the tweet card content on page reload.
 
-### `npm run build`
+- **Cats Listing**:
+  - Paginated list of horizontal scrolling cards with cat information.
+  - Creative loading state for the cat cards.
+  - Pagination and limit set to ensure all cats are listed from the first to the last records in the database.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Installation
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+To set up the project locally, follow these steps:
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+1. **Clone the repository:**
 
-### `npm run eject`
+    ```bash
+    git clone https://github.com/yourusername/your-repository.git
+    ```
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+2. **Navigate into the project directory:**
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+    ```bash
+    cd your-repository
+    ```
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+3. **Install dependencies:**
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+    ```bash
+    npm install
+    ```
 
-## Learn More
+4. **Start the development server:**
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+    ```bash
+    npm start
+    ```
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+    The application will be available at `http://localhost:3000`.
 
-### Code Splitting
+## Usage
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+### 1. Random User Profile
+- **Navigate**: Go to the `/random-user` route.
+- **Refresh Data**: Click the "Refresh" button to fetch a new random user profile.
+- **View Details**: Check the user profile details mapped from the API.
 
-### Analyzing the Bundle Size
+### 2. Random Jokes Tweet
+- **Navigate**: Go to the `/random-jokes` route.
+- **Reload Page**: Refresh the page to get a new random joke and update the tweet card content.
+- **View Analytics**: See the tweet author details, timestamp, views, and other analytics.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+### 3. Cats Listing
+- **Navigate**: Go to the `/cats-listing` route.
+- **Scroll Horizontally**: Use horizontal scrolling to view more cat cards.
+- **Pagination**: Utilize pagination controls to navigate through pages of cat information.
 
-### Making a Progressive Web App
+## Live Demo
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+You can view the live demo of the project at [your-hosted-website.com](http://your-hosted-website.com).
 
-### Advanced Configuration
+## Submission Instructions
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+1. Ensure all tasks are completed as specified.
+2. Push the code to your public GitHub repository.
+3. Include this `README.md` file with detailed descriptions, screenshots, and links.
 
-### Deployment
+## License
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
-### `npm run build` fails to minify
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+For any issues or questions, please open an issue on the [GitHub repository](https://github.com/yourusername/your-repository/issues).
