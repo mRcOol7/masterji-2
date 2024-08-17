@@ -53,7 +53,7 @@ To set up the project locally, follow these steps:
 2. **Navigate into the project directory:**
 
     ```bash
-    cd your-repository
+    cd masterji-2
     ```
 
 3. **Install dependencies:**
